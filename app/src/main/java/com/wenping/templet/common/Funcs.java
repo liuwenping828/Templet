@@ -1,6 +1,6 @@
 package com.wenping.templet.common;
 
-import rx.Observable;
+
 import rx.functions.Func1;
 
 public final class Funcs {

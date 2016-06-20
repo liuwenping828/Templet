@@ -16,6 +16,7 @@ public abstract class Gif implements Parcelable {
 
     abstract Map<String, Map<String, String>> images();
 
+    // fixed_height_downsampled,url 返回json数据的字段
     public String downsizedGif() {
         return images().get("fixed_height_downsampled").get("url");
     }

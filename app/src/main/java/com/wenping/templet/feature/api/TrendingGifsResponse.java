@@ -17,6 +17,7 @@ public abstract class TrendingGifsResponse {
         return new AutoValue_TrendingGifsResponse.MoshiJsonAdapter(moshi);
     }
 
+    // 返回json数组的 key-->data
     @Json(name = "data")
     public abstract List<Gif> gifs();
 }

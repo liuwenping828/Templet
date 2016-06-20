@@ -43,16 +43,16 @@ public class NetworkManager {
     }
 
     @NonNull
-    Observable<LoadingState> onLoadingStateChanged() {
+    public Observable<LoadingState> onLoadingStateChanged() {
         return loadingStateRelay;
     }
 
     @NonNull
-    PublishRelay<List<Gif>> onDataChanged() {
+    public PublishRelay<List<Gif>> onDataChanged() {
         return trendingGifsRelay;
     }
 
-    void setup() {
+    public void setup() {
 //        final Observable<Result<TrendingGifsResponse>> result = refreshRelay
 //                .doOnNext(ignored -> loadingStateRelay.call(LoadingState.LOADING))
 //                .flatMap(ignored -> giphyApi.latestTrending().subscribeOn(ioScheduler))
@@ -131,11 +131,11 @@ public class NetworkManager {
 
     }
 
-    void refresh() {
+    public void refresh() {
         refreshRelay.call(null);
     }
 
-    void teardown() {
+    public void teardown() {
         subscription.clear();
     }
 }

@@ -10,6 +10,11 @@ import android.support.v7.app.AppCompatActivity;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
+/**
+ *
+ * @param <V>
+ * @param <C>
+ */
 public abstract class BaseActivity<V extends PresenterView, C extends BaseComponent>
         extends AppCompatActivity {
     private Unbinder unbinder;
@@ -31,6 +36,7 @@ public abstract class BaseActivity<V extends PresenterView, C extends BaseCompon
 
     }
 
+
     @LayoutRes
     protected abstract int getLayoutId();
 
@@ -49,7 +55,6 @@ public abstract class BaseActivity<V extends PresenterView, C extends BaseCompon
     protected void onDestroy() {
         getPresenter().onViewDetached();
         unbinder.unbind();
-
         super.onDestroy();
     }
 }
