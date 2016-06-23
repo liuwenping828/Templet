@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ViewPagerGuide</string>
+
+    <!-- guide -->
+    <string name="guide_title_1">First Title</string>
+    <string name="guide_description_1">description description description</string>
+    <string name="guide_title_2">Second Title</string>
+    <string name="guide_description_2">description description description</string>
+    <string name="guide_title_3">Third Title</string>
+    <string name="guide_description_3">description description description</string>
+</resources>

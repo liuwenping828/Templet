@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- guide -->
+    <color name="guide_bg_color_1">#56717B</color>
+    <color name="guide_bg_color_2">#d9a454</color>
+    <color name="guide_bg_color_3">#00A79D</color>
+
+</resources>
